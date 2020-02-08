@@ -1,0 +1,115 @@
+.popup {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: fixed;
+  background-color: rgba($color-black, 0.8);
+  z-index: 10000;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s;
+
+  &__content {
+    background-size: cover;
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.25);
+    width: 75%;
+    opacity: 1;
+    border-radius: 0.3rem;
+    box-shadow: 0 1rem 3rem rgba($color-black, 0.9);
+    display: table;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.5s 0.2s;
+    z-index: 1;
+  }
+
+  &__left {
+    width: 33.3333333%;
+    display: table-cell;
+
+    @include respond(tab-land-med) {
+      display: none;
+    }
+  }
+
+  &__right {
+    width: 66.6666667%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 3rem 5rem;
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    @include respond(tab-land-med) {
+      width: 0;
+    }
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+
+    text-align: justify;
+    text-justify: inter-word;
+
+    -moz-column-count: 2;
+    -moz-column-gap: 4rem;
+    -moz-column-rule: 0.2rem solid $color-grey-light-1;
+
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 0.2rem solid $color-grey-light-1;
+
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    -webkit-hyphens: auto;
+    hyphens: auto;
+
+    @include respond(tab-port) {
+      font-size: 1.2rem;
+    }
+
+    @include respond(phone) {
+      -moz-column-count: 1;
+      font-size: 1rem;
+      column-count: 1;
+    }
+  }
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &:target &__content {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+
+  &__close {
+    &:link,
+    &:visited {
+      color: $color-grey;
+      position: absolute;
+      top: 2.5rem;
+      right: 2.5rem;
+      font-size: 3rem;
+      text-decoration: none;
+      display: inline-block;
+      transition: all 0.4s;
+      line-height: 1;
+    }
+
+    &:hover {
+      color: $color-primary;
+      transform: translateY(-0.1rem);
+    }
+  }
+}

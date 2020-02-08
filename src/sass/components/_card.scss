@@ -1,0 +1,455 @@
+.card {
+  perspective: 150rem;
+  -moz-perspective: 150rem;
+  position: relative;
+  height: 50rem;
+  border-color: transparent;
+  background-color: transparent;
+  margin-bottom: 5rem;
+
+  &__side {
+    height: 50rem;
+    transition: all 0.8s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 0.3rem;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+    overflow: hidden;
+
+    &--front {
+      background-color: white;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+
+      &-1 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-light,
+          $color-secondary-dark
+        );
+      }
+
+      &-2 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        );
+      }
+
+      &-3 {
+        background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        );
+      }
+
+      &-4 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba(14, 234, 241, 0.644),
+          rgba(49, 161, 143, 0.85)
+        );
+      }
+
+      &-5 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgb(219, 210, 210),
+          rgb(190, 173, 139)
+        );
+      }
+      &-6 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgb(94, 238, 219),
+          $color-tertiary-dark
+        );
+      }
+      &-7 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba(185, 204, 214, 0.85),
+          rgba(149, 155, 141, 0.85)
+        );
+      }
+      &-8 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgb(113, 150, 107),
+          rgb(173, 185, 119)
+        );
+      }
+      &-9 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba(14, 234, 241, 0.644),
+          rgba(49, 161, 143, 0.85)
+        );
+      }
+      &-10 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba(205, 209, 211, 0.85),
+          rgba(186, 187, 111, 0.85)
+        );
+      }
+      &-11 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba(214, 206, 127, 0.85),
+          rgba(173, 199, 101, 0.85)
+        );
+      }
+      &-12 {
+        background-image: linear-gradient(
+          to right bottom,
+          rgba(130, 190, 214, 0.85),
+          rgba(rgb(126, 183, 190), 0.85)
+        );
+      }
+    }
+  }
+
+  &:hover &__side--front {
+    transform: rotateY(-180deg);
+  }
+  &:hover &__side--back {
+    transform: rotateY(0);
+  }
+
+  &__picture {
+    background-size: cover;
+    height: 23rem;
+    background-blend-mode: screen;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+
+    &--1 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-light,
+          $color-secondary-dark
+        ),
+        url(./img/nat-5.jpg);
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-primary-light,
+          $color-primary-dark
+        ),
+        url(./img/nat-6.jpg);
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+          to right bottom,
+          $color-tertiary-light,
+          $color-tertiary-dark
+        ),
+        url(./img/nat-7.jpg);
+    }
+
+    &--4 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgba(14, 234, 241, 0.644),
+          rgba(49, 161, 143, 0.85)
+        ),
+        url(./img/island.jpg);
+    }
+
+    &--5 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgb(175, 170, 170),
+          rgb(190, 173, 139)
+        ),
+        url(./img/fog.jpg);
+    }
+
+    &--6 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgb(94, 238, 219),
+          $color-tertiary-dark
+        ),
+        url(./img/antartica.jpg);
+    }
+
+    &--7 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgb(75, 83, 63),
+          rgb(67, 126, 158)
+        ),
+        url(./img/airplane-wing.jpg);
+    }
+
+    &--8 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgb(113, 150, 107),
+          rgb(173, 185, 119)
+        ),
+        url(./img/china.jpg);
+    }
+
+    &--9 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgb(118, 206, 212),
+          $color-tertiary-dark
+        ),
+        url(./img/everest.jpg);
+    }
+
+    &--10 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgb(62, 84, 97),
+          rgb(123, 124, 67)
+        ),
+        url(./img/camels.jpg);
+    }
+
+    &--11 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgb(94, 88, 42),
+          rgb(160, 212, 130)
+        ),
+        url(./img/horses.jpg);
+    }
+
+    &--12 {
+      background-image: linear-gradient(
+          to right bottom,
+          rgb(130, 190, 214),
+          $color-tertiary-dark
+        ),
+        url(./img/snowboard.jpg);
+    }
+  }
+
+  &__heading {
+    font-size: 2.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    text-align: right;
+    color: $color-white;
+    position: absolute;
+    top: 12rem;
+    right: 2rem;
+    width: 75%;
+  }
+
+  &__heading-span {
+    padding: 1rem 1.5rem;
+    margin-right: -10px;
+    line-height: 5.3rem;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+    &--1 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-secondary-light, 0.85),
+        rgba($color-secondary-dark, 0.85)
+      );
+    }
+
+    &--2 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-primary-light, 0.85),
+        rgba($color-primary-dark, 0.85)
+      );
+    }
+
+    &--3 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba($color-tertiary-light, 0.85),
+        rgba($color-tertiary-dark, 0.85)
+      );
+    }
+
+    &--4 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(14, 234, 241, 0.85),
+        rgba(49, 161, 143, 0.85)
+      );
+    }
+
+    &--5 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(175, 170, 170, 0.85),
+        rgba(190, 173, 139, 0.85)
+      );
+    }
+
+    &--6 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(94, 238, 219, 0.85),
+        rgba($color-tertiary-dark, 0.85)
+      );
+    }
+
+    &--7 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(149, 155, 141, 0.85),
+        rgba(185, 204, 214, 0.85)
+      );
+    }
+
+    &--8 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(113, 150, 107, 0.85),
+        rgba(173, 185, 119, 0.85)
+      );
+    }
+
+    &--9 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(118, 206, 212, 0.85),
+        rgba($color-tertiary-light, 0.85)
+      );
+    }
+
+    &--10 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(205, 209, 211, 0.85),
+        rgba(186, 187, 111, 0.85)
+      );
+    }
+
+    &--11 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(214, 206, 127, 0.85),
+        rgba(173, 199, 101, 0.85)
+      );
+    }
+
+    &--12 {
+      background-image: linear-gradient(
+        to right bottom,
+        rgba(130, 190, 214, 0.85),
+        rgba(rgb(126, 183, 190), 0.85)
+      );
+    }
+  }
+
+  &__details {
+    padding: 3rem;
+    ul {
+      list-style: none;
+      width: 80%;
+      margin: 0 auto;
+
+      li {
+        text-align: center;
+        font-size: 1.5rem;
+        padding: 1rem;
+
+        &:not(:last-child) {
+          border-bottom: 0.1rem solid $color-grey-light-2;
+        }
+      }
+    }
+  }
+
+  &__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+  }
+
+  &__price-box {
+    text-align: center;
+    margin-bottom: 8rem;
+    color: $color-white;
+  }
+
+  &__price-only {
+    font-size: 1.4rem;
+    text-transform: uppercase;
+  }
+
+  &__price-value {
+    font-size: 6rem;
+    font-weight: 300;
+  }
+
+  &__button {
+    text-align: center;
+  }
+
+  //                          Media Query                               //
+
+  @media only screen and (max-width: 56.25em), only screen and (hover: none) {
+    height: auto;
+    border-radius: 0.3rem;
+    background-color: $color-white;
+    box-shadow: 0 1.5rem 4rem rgba($color-black, 0.15);
+
+    &__side {
+      height: auto;
+      position: relative;
+      box-shadow: none;
+
+      &--back {
+        transform: rotateY(0);
+        clip-path: polygon(0 15%, 100% 0, 100% 100%, 0 100%);
+      }
+    }
+
+    &:hover &__side--front {
+      transform: rotateY(0);
+    }
+
+    &__details {
+      padding: 1rem 3rem;
+    }
+
+    &__cta {
+      position: relative;
+      top: 0;
+      left: 0;
+      transform: translate(0);
+      width: 100%;
+      padding: 7rem 4rem 4rem;
+    }
+
+    &__price-box {
+      margin-bottom: 8rem;
+
+      @include respond(tab-port) {
+        margin-bottom: 3rem;
+      }
+    }
+
+    &__price-value {
+      font-size: 6rem;
+    }
+  }
+}

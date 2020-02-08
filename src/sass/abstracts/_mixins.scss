@@ -1,0 +1,98 @@
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+/*
+Media query selectors
+0 - 380px: Small Phone
+0 - 600px: Phone
+600 - 900px: Tablet in Portrait mode
+900 - 991px: Tablet in Portrait Medium mode
+900 - 1200px: Tablet in Landscape mode
+1200 - 1300px: Tablet in Landscape Medium mode
+{1200 - 1800px} is where our normal code acts
+1800 - 2300px: Big Desktops
+2300px - 2800px: Big desktops with HDR
+2800px + : Big desktops with 4K
+
+Breakpoint argument choices
+- phone-small
+- phone
+- tab-port
+- tab-port-med
+- tab-land
+- tab-land-med
+- big-desktop
+- big-desktop-hdr
+- big-desktop-4k
+
+1em = 16px
+*/
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == phone-small {
+    @media only screen and (max-width: 23.75em) {
+      @content;
+      //380px
+    }
+  }
+
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 37.5em) {
+      @content;
+      //600px
+    }
+  }
+
+  @if $breakpoint == tab-port {
+    @media only screen and (max-width: 56.25em) {
+      @content;
+      //900px
+    }
+  }
+
+  @if $breakpoint == tab-port-med {
+    @media only screen and (max-width: 61.9375em) {
+      @content;
+      //991px
+    }
+  }
+
+  @if $breakpoint == tab-land {
+    @media only screen and (max-width: 75em) {
+      @content;
+      //1200px
+    }
+  }
+
+  @if $breakpoint == tab-land-med {
+    @media only screen and (max-width: 81.25em) {
+      @content;
+      //1300px
+    }
+  }
+
+  @if $breakpoint == big-desktop {
+    @media only screen and (min-width: 112.5em) {
+      @content;
+      //1800px
+    }
+  }
+
+  @if $breakpoint == big-desktop-hdr {
+    @media only screen and (min-width: 143.75em) {
+      @content;
+      //2300px
+    }
+  }
+
+  @if $breakpoint == big-desktop-4k {
+    @media only screen and (min-width: 175em) {
+      @content;
+      //2800px
+    }
+  }
+}
