@@ -20,7 +20,7 @@ function Company() {
         </p>
         <p className="paragraph">
           If you are tired of going on vacations and want to do something more
-          exciting, travelify is for you, we offer the most premium tours in the
+          exciting, travelify is for you. We offer the most premium tours in the
           world.
         </p>
         <p className="paragraph u-margin-bottom-fill">

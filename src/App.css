@@ -765,6 +765,9 @@ body {
   margin-left: 3.5rem;
   font-size: 1.5rem;
   color: #999; }
+  @media only screen and (max-width: 23.75em) {
+    .form__span {
+      font-size: 1.2rem; } }
 
 .header {
   height: 95vh;
