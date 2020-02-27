@@ -9,7 +9,7 @@ import Video from "./Video";
 
 function Stories() {
   return (
-    <div className="section-stories" id="testimonials" data-aos="fade-up">
+    <div className="section-stories" id="testimonials" data-aos="fade">
       <Video videoMp4={videoMp4} videoWebm={videoWebm} />
       <div className="container">
         <H2Heading

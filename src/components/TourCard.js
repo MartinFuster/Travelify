@@ -4,7 +4,11 @@ import Button from "./Button";
 function TourCard(props) {
   return (
     <div className="col-lg-4">
-      <div className="card" data-aos="fade-up">
+      <div
+        className="card"
+        data-aos={props.dataAos}
+        data-aos-delay={props.dataAosDelay}
+      >
         <div className="card__side card__side--front">
           <div className={props.imageClass}></div>
           <h4 className="card__heading">

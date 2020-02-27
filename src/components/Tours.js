@@ -25,6 +25,7 @@ function Tours() {
             listFive="Dificulty: easy"
             backsideClass="card__side card__side--back card__side--back-1"
             price="$299"
+            dataAos="fade-up"
           />
           <TourCard
             imageClass="card__picture card__picture--2"
@@ -37,6 +38,8 @@ function Tours() {
             listFive="Dificulty: medium"
             backsideClass="card__side card__side--back card__side--back-2"
             price="$499"
+            dataAos="fade-up"
+            dataAosDelay="100"
           />
           <TourCard
             imageClass="card__picture card__picture--3"
@@ -49,6 +52,8 @@ function Tours() {
             listFive="Dificulty: hard"
             backsideClass="card__side card__side--back card__side--back-3"
             price="$799"
+            dataAos="fade-up"
+            dataAosDelay="200"
           />
         </div>
         <div className="card__button">

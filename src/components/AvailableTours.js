@@ -23,6 +23,7 @@ function AvailableTours() {
             listFive="Dificulty: easy"
             backsideClass="card__side card__side--back card__side--back-1"
             price="$299"
+            dataAos="fade-up"
           />
 
           <TourCard
@@ -36,6 +37,8 @@ function AvailableTours() {
             listFive="Dificulty: medium"
             backsideClass="card__side card__side--back card__side--back-2"
             price="$499"
+            dataAos="fade-up"
+            dataAosDelay="100"
           />
 
           <TourCard
@@ -49,6 +52,8 @@ function AvailableTours() {
             listFive="Dificulty: hard"
             backsideClass="card__side card__side--back card__side--back-3"
             price="$799"
+            dataAos="fade-up"
+            dataAosDelay="200"
           />
 
           <TourCard
@@ -62,6 +67,7 @@ function AvailableTours() {
             listFive="Dificulty: easy"
             backsideClass="card__side card__side--back card__side--back-4"
             price="$249"
+            dataAos="fade-up"
           />
 
           <TourCard
@@ -75,6 +81,8 @@ function AvailableTours() {
             listFive="Dificulty: medium"
             backsideClass="card__side card__side--back card__side--back-5"
             price="$1.675"
+            dataAos="fade-up"
+            dataAosDelay="100"
           />
 
           <TourCard
@@ -88,6 +96,8 @@ function AvailableTours() {
             listFive="Dificulty: hard"
             backsideClass="card__side card__side--back card__side--back-6"
             price="$14.999"
+            dataAos="fade-up"
+            dataAosDelay="200"
           />
 
           <TourCard
@@ -101,6 +111,7 @@ function AvailableTours() {
             listFive="Dificulty: easy"
             backsideClass="card__side card__side--back card__side--back-7"
             price="$699"
+            dataAos="fade-up"
           />
 
           <TourCard
@@ -114,6 +125,8 @@ function AvailableTours() {
             listFive="Dificulty: hard"
             backsideClass="card__side card__side--back card__side--back-8"
             price="$7.499"
+            dataAos="fade-up"
+            dataAosDelay="100"
           />
 
           <TourCard
@@ -127,6 +140,8 @@ function AvailableTours() {
             listFive="Dificulty: extreme"
             backsideClass="card__side card__side--back card__side--back-9"
             price="$39.999"
+            dataAos="fade-up"
+            dataAosDelay="200"
           />
           <TourCard
             imageClass="card__picture card__picture--10"
@@ -139,6 +154,7 @@ function AvailableTours() {
             listFive="Dificulty: easy"
             backsideClass="card__side card__side--back card__side--back-10"
             price="$2.299"
+            dataAos="fade-up"
           />
           <TourCard
             imageClass="card__picture card__picture--11"
@@ -151,6 +167,8 @@ function AvailableTours() {
             listFive="Dificulty: medium"
             backsideClass="card__side card__side--back card__side--back-11"
             price="$1.199"
+            dataAos="fade-up"
+            dataAosDelay="100"
           />
           <TourCard
             imageClass="card__picture card__picture--12"
@@ -163,6 +181,8 @@ function AvailableTours() {
             listFive="Dificulty: hard"
             backsideClass="card__side card__side--back card__side--back-12"
             price="$1.649"
+            dataAos="fade-up"
+            dataAosDelay="200"
           />
         </div>
       </div>
