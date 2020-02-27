@@ -3,12 +3,7 @@ const year = new Date().getFullYear();
 
 function Copyright(props) {
   return (
-    <div
-      className="copyright"
-      data-aos="fade"
-      data-aos-delay="200"
-      data-aos-anchor-placement="bottom"
-    >
+    <div className="copyright">
       <p className="copyright__text">
         <span role="img" aria-label="copyright">
           ©️

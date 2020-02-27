@@ -106,8 +106,15 @@
   }
 }
 
+.content {
+  flex: 1 0 auto;
+  min-height: 100vh;
+}
 .section-footer {
   background-color: $color-grey-dark-3;
   padding: 10rem;
   padding-bottom: 1rem;
+  flex-shrink: 0;
 }
+
+

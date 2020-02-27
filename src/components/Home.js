@@ -11,13 +11,15 @@ import Popup from "./Popup";
 function Home() {
   return (
     <div>
-      <Popup />
-      <Header />
-      <About />
-      <Features />
-      <Tours />
-      <Stories />
-      <Booking />
+      <div className="content">
+        <Popup />
+        <Header />
+        <About />
+        <Features />
+        <Tours />
+        <Stories />
+        <Booking />
+      </div>
       <Footer />
     </div>
   );

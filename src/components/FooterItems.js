@@ -4,11 +4,7 @@ import { Link } from "react-router-dom";
 
 function FooterItems(props) {
   return (
-    <ul
-      className="footer-text"
-      data-aos="fade"
-      data-aos-anchor-placement="bottom-bottom"
-    >
+    <ul className="footer-text">
       <hr className="footer-text__hr" />
       <li className="footer-text__item">
         <Link to={props.itemOnePath} className="footer-text__link">

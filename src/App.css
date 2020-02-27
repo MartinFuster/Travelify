@@ -86,7 +86,9 @@ html {
       font-size: 120%; } }
 
 body {
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column; }
 
 @media only screen and (max-width: 56.25em) {
   .container {
@@ -769,6 +771,44 @@ body {
     .form__span {
       font-size: 1.2rem; } }
 
+.error__container {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media only screen and (max-width: 61.9375em) {
+    .error__container {
+      flex-direction: column; } }
+
+.error__content {
+  margin-left: 5rem; }
+  @media only screen and (max-width: 61.9375em) {
+    .error__content {
+      margin-top: 10rem;
+      margin-left: 0; } }
+
+.error__image {
+  height: 35rem; }
+  @media only screen and (max-width: 61.9375em) {
+    .error__image {
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+      margin-bottom: 15rem; } }
+
+.no-match {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; }
+
+.big-text {
+  font-size: 5rem;
+  font-weight: 600;
+  margin-bottom: 2rem; }
+
+.text {
+  margin-right: 5rem; }
+
 .header {
   height: 95vh;
   background-image: linear-gradient(to right bottom, #7ed56fcc, #28b485b0), url(./img/hero.jpg);
@@ -1180,7 +1220,12 @@ body {
       .book__form {
         width: 100%; } }
 
+.content {
+  flex: 1 0 auto;
+  min-height: 100vh; }
+
 .section-footer {
   background-color: #2d2d2d;
   padding: 10rem;
-  padding-bottom: 1rem; }
+  padding-bottom: 1rem;
+  flex-shrink: 0; }

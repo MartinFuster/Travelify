@@ -7,6 +7,8 @@ import Contact from "./components/Contact";
 import Carrers from "./components/Carrers";
 import PrivacyPolicy from "./components/PrivacyPolicy";
 import TermsAndConditions from "./components/TermsAndConditions";
+import NotFound from "./components/NotFound";
+
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop";
 import AOS from "aos";
@@ -28,6 +30,7 @@ function App() {
           <Route path="/careers" component={Carrers} />
           <Route path="/privacy-policy" component={PrivacyPolicy} />
           <Route path="/terms-and-conditions" component={TermsAndConditions} />
+          <Route path="*" component={NotFound} />
         </Switch>
       </div>
     </Router>
