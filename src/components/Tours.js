@@ -56,12 +56,8 @@ function Tours() {
             dataAosDelay="200"
           />
         </div>
-        <div className="card__button">
-          <Link
-            to="/tours"
-            className="btn btn--green--gradient"
-            data-aos="zoom-in-up"
-          >
+        <div className="card__button" data-aos="fade">
+          <Link to="/tours" className="btn btn--green--gradient">
             Discover All Tours
           </Link>
         </div>
