@@ -48,7 +48,7 @@ function Navbar() {
                 className="nav-link"
                 target="_blank"
                 rel="noopener noreferrer"
-                href="https://linkedin.com/"
+                href="https://www.linkedin.com/in/martin-fuster-7b1b381a2/"
               >
                 <i className="fab fa-linkedin-in"></i>
               </a>
